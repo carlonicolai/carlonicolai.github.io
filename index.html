@@ -69,6 +69,25 @@ li.a {
     display: inline;
 }
 
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column1 {
+  float: left;
+  width: 70%;
+  padding: 0px;
+}
+.column2 {
+  float: left;
+  width: 30%;
+  padding: 0px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+
 
 </style>
 <script type="text/javascript" id="MathJax-script" async
@@ -109,17 +128,15 @@ li.a {
 </ul.a>
 </p>
 
-<br>
 
-<center><img src="Carlo_Hil2.jpg" alt="Carlo" style="height:25%;width:25%"></center>
 
-<br>
-
-<p class="line">I am Lecturer in Philosophy (Logic) at King's College London. 
-I obtained my DPhil from the University of Oxford. Before King's, I was in Munich (MCMP) with a Marie Sk&#322odowska-Curie Individual Fellowship, and in Utrecht with a VENI (NWO) grant.  My research mostly focuses on the logic and the nature of the notions of truth, consequence, predication.</p>
-
-<p class="line">I am member of the <a href="http://www.homepages.ucl.ac.uk/~uctytbu/lgfp.html">London Group for Formal Philosophy</a>.</p>
-
+<!--style="height:25%;width:25%"-->
+<div class="row">
+<div class="column2"><img src="Carlo_Hil2.jpg" alt="Carlo" style="height:80%;width:80%"></div>
+<div class="column1"><p class="line">
+<br><br> I am Lecturer in Philosophy (Logic) at King's College London.  I obtained my DPhil from the University of Oxford. Before King's, I was in Munich (MCMP) with a Marie Sk&#322odowska-Curie Individual Fellowship, and in Utrecht with a VENI (NWO) grant.  My research mostly focuses on the logic and the nature of the notions of truth, consequence, predication.<br>
+I am member of the <a href="http://www.homepages.ucl.ac.uk/~uctytbu/lgfp.html">London Group for Formal Philosophy</a>.</p></div>
+</div>
 
 <br><br>
 
